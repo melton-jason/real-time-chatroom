@@ -1,0 +1,6 @@
+{
+  "SERVER_HOST": "127.0.0.1",
+  "SERVER_PORT": 17203,
+  "DB_PATH": "./src/Database/message_platform.db",
+  "DB_SETUP": "./src/Database/db_structure.sql"
+}

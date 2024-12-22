@@ -1,0 +1,2 @@
+bcrypt==4.2.1
+dearpygui==2.0.0
