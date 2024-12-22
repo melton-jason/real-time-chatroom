@@ -57,6 +57,7 @@ def login(sender, app_data, user_data):
     if message_type == "OK":
         client.username = username
         dpg.delete_item(dpg.get_item_parent(sender))
+        dpg.set_viewport_title(f"{username}: Connected to {client.hostname}")
         user_list(client)
         chatroom_list(client)
     elif message_type == "FAIL":
@@ -77,6 +78,7 @@ def create_user(sender, app_data, user_data):
     if message_type == "OK":
         client.username = username
         dpg.delete_item(dpg.get_item_parent(sender))
+        dpg.set_viewport_title(f"{username}: Connected to {client.hostname}")
         user_list(client)
         chatroom_list(client)
     elif message_type == "FAIL":
