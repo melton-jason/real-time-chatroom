@@ -27,7 +27,6 @@ def handle(client: socket.socket):
             client.send(handle_message(message))
         except Exception as e:
             client.close()
-            raise
 
 
 def receive():
